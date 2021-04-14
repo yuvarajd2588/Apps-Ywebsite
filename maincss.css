@@ -1,0 +1,118 @@
+.fakeimg{
+    height: 100px;
+    background: rgb(133, 9, 9);
+}
+
+.playstore-image {
+  border: 5px solid #555;
+  
+}
+
+.nav-item{
+    color: black;
+}
+
+.fa-copy {
+  background:#E46A44;
+  color: black;
+  padding: 20px;
+  width: 50px;
+  float: right;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-share {
+  background:#E46A44;
+  color: black; 
+  padding: 20px;
+  width: 50px;
+  float: right;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+/*.fa {
+  padding: 20px;
+  font-size: 60px;
+  width: 50px;
+  text-align: right;float: right;
+  text-decoration: none;
+  margin: 5px 2px;float:inline-end;
+}*/
+
+/*.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}*/
+
+.dropdown {
+  position:fixed;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 360px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 16px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropdown {background-color:transparent;}
+
+/**,*::before,*::after{
+    box-sizing: border-box;
+    font-family: 'Gill Sans','Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+}*/
+
+.cft-calculator{
+    background: #CBD3D8;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.allbutton{
+    display: inline;
+    padding-right: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.calcbutton {width: 250px;height: auto;background: #E46A44;color: white;float: left;}
+.clearbutton{width: 150px;background: #E46a44;color: black;float: left;margin-right: 20px;;}
+
+.allbutton > button:hover{
+    background-color: rgba(46, 10, 179, 0.9);
+}
+
+.result{
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 25px;
+    max-width: auto;max-height: 50vh;
+    min-width: 10vh; min-height: 5vh;
+}
+
