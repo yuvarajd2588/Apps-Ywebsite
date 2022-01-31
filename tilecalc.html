@@ -14,10 +14,14 @@
 </head>
 <body>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
+<!-- <div class="jumbotron text-center" style="margin-bottom:0">
   <h1>Simple Calculators</h1>
   <p>Download from Google Play store or Just calcualte here</p> 
-</div>
+</div> -->
+<div class="center" style="border: 3px solid #E46A44;padding: 5px;">
+  <img src="Images/headimage2.jpeg" class="heading-image" alt="Home.." width="180px" height="100px">
+  <a style="color:red; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font: size 8px;;">Download the Calculator Apps from Google Play/Apple App store. </a>
+</div>   
 
 <!-- <nav class="navbar navbar-expand-x1 bg-tomato navbar-dark" adjust x1 to sm or something -->
 <nav class="navbar navbar-expand-sm bg-tomato navbar-dark"
@@ -79,28 +83,52 @@
 
     <div class="col-sm-8">
          <!-- Bootstrap Grid Example -->
-         <div class="playstore-image">
-            <a href="https://play.google.com/store/apps/details?id=com.yuvaraj.tilecarpetvinylfloorwallareacalculator"  target="_blank">
-               <img src="Images/playstoreimage.png" class="square-img" alt="Download-link" width="200px" height="80px">
-               <label><span style="font-size: large;"> Tiles Area caluclator</span></label>
-               <a class="fa fa-copy" onclick="copyfunc(2)"></a>
-             </a>
-           </div>
+        <div class="playstore-image">
+        <a href="https://play.google.com/store/apps/details?id=com.yuvaraj.tilecarpetvinylfloorwallareacalculator"
+          target="_blank">
+          <img src="Images/google-play-badge.png" class="square-img" alt="Download-link" width="40%" height="20%">
+          <label><span style="font-size: large;color: darkblue;"> Tiles caluclator</span></label>
+        </a>
+        </div>
+      <br>
+        
  
       <div class="cft-calculator" id="cft-calc">
           <img src="Images/56_work_progress_under_construction_sign_board-256.png"
                     class="square-img" alt="Home.." width="100px" height="100px">
-          <h3>Tiles Area Calculator under Development...</h3>
-          <h2>For now please download Android app from above link for free and calculate on the go</h2>
+          <h3>Tiles Calculator is under Development...</h3>
+          <h2>For now please download Android app from above link for free and calculate in Mobile</h2>
       </div>
     </div>
 </div>
 
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Please contact us if you are looking for any simple construction based calculators or something 
-    you may need as an app/website just to put in your stuff for reaching consumers'
- </p>
+  <div class="row col-xs-3 col-sm-6 col-md-6 col-lg-8"></div>
+  <p>
+    Please submit contact form with your details and suggestions/Questions. Thanks for visting!.
+  </p>
+  <form onsubmit="return false;" id="contactForm">  
+    <div class contact-fields>     
+      <label class="contactError" id="contactError">*Mandatory Fields </label><br>
+      <label class="contact" style="text-align: right;">Name:*</label>
+      <input type="text" class="contact" id="contactName">
+      <br>
+      <label class="contact" style="text-align: right;">Email:*</label>
+      <input type="email" class="contact" id="contactEmail" >
+      <br>
+      <label class="contact" style="text-align: right;">Mobile:</label>
+      <input type="number" class="contact" id="contactMobile" >
+      <br>
+      <label class="contact" style="text-align: right;">Query:*</label>
+      <textarea  cols="20" rows="3" type="text" class="contact-query" id="contactQuery"></textarea>
+      <br>
+      <input type="submit" style="margin-right: 10px;" onclick="submitContactForm()">
+      <input type="reset">
+    </div> 
+  </form>
+  </div>
 </div>
+<br>
 
 </body>
 </html>

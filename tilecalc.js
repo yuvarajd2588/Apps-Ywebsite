@@ -83,3 +83,47 @@ function copyfunc(appno) {
         document.body.removeChild(textarea);
     }
 }
+
+function submitContactForm(){
+    const ctName = document.getElementById('contactName').value
+    const ctEmail = document.getElementById('contactEmail').value
+    const ctMobile = document.getElementById('contactMobile').value
+    const ctQuery = document.getElementById('contactQuery').value
+    var ctError = document.getElementById('contactError').value
+    var contactValues = {
+        "contactName"    : ctName,
+        "contactEmail"     : ctEmail,
+        "contactMobile"    : ctMobile,
+        "contactQuery" : ctQuery
+    };
+    //Below ajax call is asyncronus. to make it sync change (async= false(!1). So call to backend will happen synchromusly.)
+    $.ajax({
+        url: "http://localhost:8080/contactform",
+        type : "POST",
+        data : JSON.stringify(contactValues),
+        
+        async: !1,
+        crossDomain: true,
+        contentType: 'application/json',
+        success : function(contactResponse){    
+            //Below line resets the form data to initial value. In our case it is blank
+            $('#contactForm')[0].reset();
+            document.getElementById('contactError').innerHTML = contactResponse
+            document.getElementById("contactError").style.color ="RED"
+            // $.each(contactResponse.Errors, function (key, value) {
+            //     if (value != null) {
+            //         $("#Err_" + key).html(value[value.length - 1].ErrorMessage);
+            //     }
+            // });
+        },
+        error : function(e) {
+            var responseerrors = e.responseJSON;
+            console.log("errors in ajax ==> "+e.responseText);
+            alert(responseerrors.error);
+            ctError = responseerrors.error + ". Information not sent. Please try again later";
+            document.getElementById('contactError').innerHTML = ctError 
+            document.getElementById("contactError").style.color ="RED"
+        }
+    });   
+    
+}

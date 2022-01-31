@@ -1,11 +1,78 @@
+.contact{
+  font-size: 15px;border-radius: 8px;height: auto;width: auto;
+}
+.contact-query{
+  font-size: 15px;border-radius: 8px;height: auto;width: auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  border: 3px solid green;
+}
+
+.heading-image{
+  float:inherit;
+}
+
+.label-name
+{
+  font-size:15pt;
+  height:30px;
+  width:23%;
+  text-align: center;
+}
+.dummy-label
+{
+  font-size:15pt;
+  height:30px;
+  width:23%;
+  text-align: left;
+}
+
+.input-number
+    {
+     font-size:15pt;
+     height:30px;
+     width:20%;
+     border-radius: 5px;
+    }
+
+.input-inches
+    {
+     font-size:15pt;
+     height:30px;
+     width:20%;
+     border-radius: 5px;
+    }
+
+.input-unit
+    {
+     font-size:15pt;
+     height:30px;
+     width:20%;
+     border-radius: 5px;
+    }
+
+    h4{
+      white-space: wrap;
+      overflow: hidden;
+      display: block;
+      text-overflow: ellipsis;
+      color: red;
+      width: fit-content;
+  }
+/*@media screen and (max-width:640px){
+      input.allbutton{
+           width:10px;
+      }
+ }*/
+
 .fakeimg{
     height: 100px;
     background: rgb(133, 9, 9);
-}
-
-.playstore-image {
-  border: 5px solid #555;
-  
 }
 
 .nav-item{
@@ -89,30 +156,62 @@
 }
 
 .allbutton{
-    display: inline;
-    padding-right: 30px;
-    text-align: center;
+    
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
-    cursor: pointer;
+  
 }
 
-.calcbutton {width: 250px;height: auto;background: #E46A44;color: white;float: left;}
-.clearbutton{width: 150px;background: #E46a44;color: black;float: left;margin-right: 20px;;}
+.calcbutton {width: 35%;height: auto;white-space: nowrap;background: #E46A44;color: white;float: right;margin-right: 10px;}
+.clearbutton{width: 25%;height: auto;white-space: nowrap;background: #E46a44;color: black;float: right;}
 
 .allbutton > button:hover{
     background-color: rgba(46, 10, 179, 0.9);
 }
 
-.result{
+/* .result{
     justify-content: space-around;
     flex-direction: column;
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
     font-size: 25px;
-    max-width: auto;max-height: 50vh;
-    min-width: 10vh; min-height: 5vh;
+    max-height: 50vh;
+    min-height: 5vh;
+    width: auto;
+} */
+/* #mainresult {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
 }
+
+#mainresult div {
+   flex: 1;
+} */
+
+#mainresult{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  
+  }
+
+  .playstore-image {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 3px solid #555;
+  }
+  
+  
+  .square-img{
+    float:inherit;
+  }
+  
+  
 

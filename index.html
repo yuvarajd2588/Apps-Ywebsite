@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Simple Calculators</title>
   <link rel="stylesheet" href="maincss.css">
@@ -7,57 +8,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="cftcalc.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+  
+  <!-- <div class="center" style="border: 3px solid #E46A44;padding: 5px;">
+    <img src="Images/headimage2.jpeg" class="heading-image" alt="Home.." width="180px" height="100px">
+     Download the Simple Calculators from Google Play store/Apple App store.
+  </div>     -->
+  <div class="center" style="border: 3px solid #E46A44;padding: 5px;">
+    <img src="Images/headimage2.jpeg" class="heading-image" alt="Home.." width="180px" height="100px">
+    <a style="color:red; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font: size 8px;;">Download the Calculator Apps from Google Play/Apple App store. </a>
+  </div> 
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>Simple Calculators</h1>
-  <p>Download from Google Play store or Just calcualte here</p>
-</div>
-
-<!-- <nav class="navbar navbar-expand-x1 bg-tomato navbar-dark" adjust x1 to sm or something -->
-<nav class="navbar navbar-expand-sm bg-tomato navbar-dark"
-      style="font-size: 30px; background: rgb(190, 85, 10);">
-  <!--<img src="../Images/homeimage.png" class="rounded-circle" alt="Home.." width="30px" height="30px">-->
-  <img src="Images/homeimageorange.jpeg" class="rounded-circle" alt="Home.." width="40px" height="40px">
-  <a class="navbar-brand" href="#"></a>
-  <a class="navbar-brand" href="index.html" style="color: rgb(0, 0, 0);">
-                          <span style="font-size: 12px">H</span>
-                          <span style="font-size: 14px">O</span>
-                          <span style="font-size: 16px">M</span>
-                          <span style="font-size: 18px">E</span></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav mx-auto">
-      <li class="nav-item">
-        <div class="dropdown">
-          <a class="dropdown-text" href="#" style="color: black;">Simple Calculators</a>
-          <div class="dropdown-content">
-            <a href="index.html">Cubic Foot(CFT)</a>
-            <a href="tmtcalc.html">TMT Steel Rebar</a>
-            <a href="tilecalc.html">Tiles Area & Price</a>
+  <!-- <nav class="navbar navbar-expand-x1 bg-tomato navbar-dark" adjust x1 to sm or something -->
+  <nav class="navbar navbar-expand-sm bg-tomato navbar-dark" style="font-size: 30px; background: rgb(190, 85, 10);">
+    <!--<img src="../Images/homeimage.png" class="rounded-circle" alt="Home.." width="30px" height="30px">-->
+    <img src="Images/homeimageorange.jpeg" class="rounded-circle" alt="Home.." width="40px" height="40px">
+    <a class="navbar-brand" href="#"></a>
+    <a class="navbar-brand" href="index.html" style="color: rgb(0, 0, 0);">
+      <span style="font-size: 12px">H</span>
+      <span style="font-size: 14px">O</span>
+      <span style="font-size: 16px">M</span>
+      <span style="font-size: 18px">E</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <div class="dropdown">
+            <a class="dropdown-text" href="#" style="color: black;">Simple Calculators</a>
+            <div class="dropdown-content">
+              <a href="index.html">Cubic Foot(CFT)</a>
+              <a href="tmtcalc.html">TMT Steel Rebar</a>
+              <a href="tilecalc.html">Tiles Area & Price</a>
+            </div>
           </div>
-        </div>
-        <!--<a class="nav-link-tut" href="#" style="color: black;">Tutorials</a>-->
-      </li>
-    </ul>
+          <!--<a class="nav-link-tut" href="#" style="color: black;">Tutorials</a>-->
+        </li>
+      </ul>
 
-    <ul class="navbar-nav ml-right">
-      <li><a href="about.html" style="color: black;"><i class="fa fa-fw fa-user"></i>About</a></li>
-    </ul>
-    <ul class="navbar-nav ml-right">
-      <li><a href="contact.html" style="color: black;"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
-    </ul>
+      <ul class="navbar-nav ml-right">
+        <li><a href="about.html" style="color: black;"><i class="fa fa-fw fa-user"></i>About</a></li>
+      </ul>
+      <ul class="navbar-nav ml-right">
+        <li><a href="contact.html" style="color: black;"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
+      </ul>
 
       <!-- Commented below Navigation Items for now. Just keeping home, Contact us options.
       In future if more content needed these navigation bar items can be added.-->
-     <!-- <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="#" style="color: black;">CFT Calculator</a>
       </li>
       <li class="nav-item">
@@ -70,132 +79,222 @@
         <a class="nav-link" href="#" style="color: black;">More</a>
       </li>-->
 
+    </div>
+  </nav>
 
-  </div>
-</nav>
+  <div class="container" style="margin-top:30px">
+    <div class="row">
+      <div class="col-sm col-md col-xs col-lg">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Download/Calculate here</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id='link1' href="index.html" onclick="cftcalc()">CFT Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id='link2' href="tmtcalc.html" onclick="tmtcalc()">TMT Steel Rebar Estimator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id='link3' href="tilecalc.html" onclick="tilecalc()">Tiles Area Calculator</a>
+          </li>
+          <br>
+        </ul>
+        <hr class="d-sm-none">
+      </div>
 
-<div class="container" style="margin-top:30px">
-  <div class="row">
-    <div class="col-sm-4">
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Download/Calculate here</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id='link1' href="index.html" onclick="cftcalc()">CFT Calculator</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id='link2' href="tmtcalc.html" onclick="tmtcalc()">TMT Steel Rebar Estimator</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id='link3' href="tilecalc.html" onclick="tilecalc()">Tiles Area Calculator</a>
-        </li>
+      <div class="col-xs-3 col-sm-6 col-md-6 col-lg-8">
+        <!-- Bootstrap Grid Example -->        
+        <!-- <h2>Just enter values and get desired result</h2> -->
+        <!-- <h5>Input Length, Width & Height</h5> -->
+        <h4>Cubic Foot(cft) Calcualtor</h4>
+
+        <div class="cft-calculator" id="cft-calc">
+          <!--<div class="input">-->
+          <form onsubmit="return false;">
+            <div class="row" style="width:auto;">
+              <label for="dummy" class="dummy-label"></label>
+              <label for="dummy" class="dummy-label"></label>
+              <label for="dummy" class="dummy-label" style="color: mediumblue;">Inches</label>
+              <label for="dummy" class="dummy-label" style="color: mediumblue;">Units</label> 
+            </div>
+            <div class="row" style="width:auto;">
+              <label for="lenlabel" class="label-name">Length:</label>
+              <!--<input data-leninpt type="number" id"leninp" name=:leninp"
+              oninvlid="validate(this);"
+              oninput="validate(this);"
+              required="required"> -->
+              <!-- step=1 0r 0.01 means it increases by that value inside text box
+              Add this line in input tag to round off value as typed oninput="this.value = Math.round(this.value);"-->
+              <input data-leninp type="number" id="leninp" step="any" class="input-number" name="leninp" style="margin-right: 5px;">
+              <select data-dropdown1 name="leninches" class="input-inches" id="leninches" style="margin-right: 5px;">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>             
+
+              <select data-dropdown1 name="units" class="input-unit" id="unitlen" style="margin-right: 5px;">
+                <option value="Foot">Foot</option>
+                <option value="Inches">Inches</option>
+                <option value="Meters">Meters</option>
+                <option value="Yards">Yards</option>
+              </select>
+              <label id="lenerror" style="color: red;"></label>
+              <br>
+            </div>
+            
+            <div class="row" style="width:auto;">
+              <label for="widlabel" class="label-name" >Width  :</label>
+              <input data-leninp type="number" id="widinp" class="input-number" step="any" name="wid in foot" style="margin-right: 5px;">
+              <select data-dropdown1 name="Inches" class="input-inches" id="widinches" style="margin-right: 5px;">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>             
+              <select data-dropdown1 name="units" class="input-unit" id="unitwid" style="margin-right: 5px;">
+                <option value="Foot">Foot</option>
+                <option value="Inches">Inches</option>
+                <option value="Meters">Meters</option>
+                <option value="Yards">Yards</option>
+              </select><br>
+              <label id="widerror" style="color: red;"></label>
+              <br>
+            </div>
+
+            <div class="row" style="width:auto;">
+              <label for="heightlabel" class="label-name">Height: </label>
+              <input data-leninp type="number" id="htinp" class="input-number" step="any" name="ht in foot" style="margin-right: 5px;">
+              <select data-dropdown1 name="htinches" class="input-inches" id="htinches" style="margin-right: 5px;">
+                <option value="0" selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>             
+              <select data-dropdown1 class="input-unit" name="units" id="unitht" style="margin-right: 5px;">
+                <option value="Foot">Foot</option>
+                <option value="Inches">Inches</option>
+                <option value="Meters">Meters</option>
+                <option value="Yards">Yards</option>
+              </select><br>
+              <label id="hterror" style="color: red;"></label>
+              <br>
+            </div>
+          
+            <div class="row allbutton">
+              <label for="dummy" class="dummy-label"></label>
+              <button calc-button class="calcbutton" style="border-radius: 8px;" >CALCULATE</button>
+              <button clear-button class="clearbutton button4" style="border-radius: 8px;"  onclick="clearFunction()">CLEAR</button>
+            </div>
+            <br>
+            <label class="cftCalcError" id="cftCalcError"></label><br>
+            <div id=mainresult>
+              <label for="resulttext">Result(ft³): </label>
+              <input type="text" display-result id="displayresult" disabled style="font-size: 25px;border-radius: 8px;height: 60px;width: 50%;" class="result">
+            </div>
+            
+            <div class="Description">
+              <p>Please enter values in any unit Lenght in Foot, width in Yards, Height in Meters and hit 'CALCULATE' to get result</p>
+            </div>
+          </form>
+        </div><br>
+        
+        <div class="playstore-image">
+          <a href="https://play.google.com/store/apps/details?id=calculator.cubicfeet.truck.truckcubicfeetcalculator"
+            target="_blank">
+            <img src="Images/google-play-badge.png" class="square-img" alt="Download-link" width="40%" height="50%">
+            <label><span style="font-size: large;color: darkblue;"> CFT Calculator</span> </label>
+          </a>
+          </div>
         <br>
 
-      </ul>
-      <hr class="d-sm-none">
-    </div>
-
-    <div class="col-sm-8">
-         <!-- Bootstrap Grid Example -->
-
-         <div class="playstore-image">
-           <a href="https://play.google.com/store/apps/details?id=calculator.cubicfeet.truck.truckcubicfeetcalculator"  target="_blank">
-              <img src="Images/playstoreimage.png" class="square-img" alt="Download-link" width="200px" height="80px">
-              <label><span style="font-size: large;"> CFT Calculator</span> </label>
-           </a>
-            <a class="fa fa-copy" onclick="copyfunc(1)"></a>
-            <!--<a href="https://wa.me/?text=https://play.google.com/store/apps/dev?id=5742750226385239940"
-                  data-action="share/whatsapp/share" target="_blank" class="fa fa-share" ></a>-->
+        <div class="playstore-image">
+          <a href="https://apps.apple.com/us/app/cft-calculator-cubic-foot/id1571236577" 
+            target="_blank">
+            <img src="Images/apple-app-store-badge111.png" class="square-img" alt="Download-link" width="40%" height="auto">
+            <label><span style="font-size: small;color: darkblue;"> CFT Calculator iOS</span></label>
+          </a>
+        </div>
+        <br>
+        <div class="playstore-image">
+          <a href="https://play.google.com/store/apps/details?id=com.yuvaraj.tilecarpetvinylfloorwallareacalculator"
+            target="_blank">
+            <img src="Images/google-play-badge.png" class="square-img" alt="Download-link" width="40%" height="20%">
+            <label><span style="font-size: large;color: darkblue;"> Tiles caluclator</span></label>
+          </a>
          </div>
-
-
-          <br>
-          <div class="playstore-image">
-            <a href="https://play.google.com/store/apps/details?id=com.yuvaraj.tilecarpetvinylfloorwallareacalculator"  target="_blank">
-               <img src="Images/playstoreimage.png" class="square-img" alt="Download-link" width="200px" height="80px">
-               <label><span style="font-size: large;"> Tiles caluclator</span></label>
-             </a>
-             <a class="fa fa-copy" onclick="copyfunc(2)"></a>
-             <!--<a href="https://wa.me/?text=https://play.google.com/store/apps/dev?id=5742750226385239940"
+        <br>
+        
+        <div class="playstore-image">
+          <a href="https://play.google.com/store/apps/details?id=estimator.sandfilling.tmt.steel.com.tmtsteelsandfillingestimator"
+            target="_blank">
+            <img src="Images/google-play-badge.png" class="square-img" alt="Download-link" width="40%" height="auto">
+            <label><span style="font-size: small;color: darkblue;"> TMT Steel Estimator</span> </label>
+          </a>
+          <!-- <a class="fa fa-copy" onclick="copyfunc(3)"></a> -->
+          <!--<a href="https://wa.me/?text=https://play.google.com/store/apps/dev?id=5742750226385239940"
                   data-action="share/whatsapp/share" target="_blank" class="fa fa-share" ></a>-->
-           </div>
-          <br>
-           <div class="playstore-image">
-            <a href="https://play.google.com/store/apps/details?id=estimator.sandfilling.tmt.steel.com.tmtsteelsandfillingestimator"  target="_blank">
-               <img src="Images/playstoreimage.png" class="square-img" alt="Download-link" width="200px" height="80px">
-               <label><span style="font-size: large;"> TMT Steel Estimator</span> </label>
-             </a>
-             <a class="fa fa-copy" onclick="copyfunc(3)"></a>
-            <!--<a href="https://wa.me/?text=https://play.google.com/store/apps/dev?id=5742750226385239940"
-                  data-action="share/whatsapp/share" target="_blank" class="fa fa-share" ></a>-->
-           </div>
+        </div>
 
-        <h2>Just enter values and get desired result</h2>
-        <h5>Input Length, Width & Height</h5>
-        <br>
-        <h3>Cubic Foot(cft) Calcualtor</h3>
-
-      <div class="cft-calculator" id="cft-calc">
-        <div class="input">
-          <label for="lenlabel">Length:</label>
-          <!--<input data-leninpt type="number" id"leninp" name=:leninp"
-          oninvlid="validate(this);"
-          oninput="validate(this);"
-          required="required"> -->
-        <input data-leninp type="number" id="leninp" name="leninp">
-        <select data-dropdown1 name="units" id="unitlen">
-          <option value="Foot">Foot</option>
-          <option value="Inches">Inches</option>
-          <option value="Meters">Meters</option>
-          <option value="Yards">Yards</option>
-        </select><br>
-        <label id="lenerror" style="color: red;"></label>
-        <br>
-        <label for="widlabel">Width : </label>
-        <input data-leninp type="number" id="widinp" name="wid in foot">
-        <select data-dropdown1 name="units" id="unitwid">
-          <option value="Foot">Foot</option>
-          <option value="Inches">Inches</option>
-          <option value="Meters">Meters</option>
-          <option value="Yards">Yards</option>
-        </select><br>
-        <label id="widerror" style="color: red;"></label>
-        <br>
-        <label for="heightlabel">Height: </label>
-        <input data-leninp type="number" id="htinp" name="ht in foot">
-        <select data-dropdown1 name="units" id="unitht">
-          <option value="Foot">Foot</option>
-          <option value="Inches">Inches</option>
-          <option value="Meters">Meters</option>
-          <option value="Yards">Yards</option>
-        </select><br>
-        <label id="hterror" style="color: red;"></label>
-        <br>
-      </div>
-      <div class="allbutton">
-        <button clear-button class="clearbutton" onclick="clearFunction()">CLEAR ALL</button>
-        <button calc-button class="calcbutton">CALCULATE</button><br><br>
-      </div>
-      <div class="output">
-        <label for="resulttext">Result: </label>
-        <input type="text" display-result id="displayresult" class="result">
-      </div>
-      <div class="Description">
-        <p>Please enter Input values in any format Foot & Inches, Meters or only Inches or Yards</p>
-        <br>
       </div>
     </div>
-
-  </div>
-</div>
-
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Please contact us if you are looking for any simple construction based calculators or something
-     you may need as an app/website just to put in your stuff for reaching consumers'
-  </p>
-</div>
-
-
+    <br>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+      <div class="row col-xs-3 col-sm-6 col-md-6 col-lg-8"></div>
+      <p>
+        Please submit contact form with your details and suggestions/Questions. Thanks for visting!.
+      </p>
+      <form onsubmit="return false;" id="contactForm">  
+        <div class contact-fields>     
+          <label class="contactError" id="contactError">*Mandatory Fields </label><br>
+          <label class="contact" style="text-align: right;">Name:*</label>
+          <input type="text" class="contact" id="contactName">
+          <br>
+          <label class="contact" style="text-align: right;">Email:*</label>
+          <input type="email" class="contact" id="contactEmail" >
+          <br>
+          <label class="contact" style="text-align: right;">Mobile:</label>
+          <input type="number" class="contact" id="contactMobile" >
+          <br>
+          <label class="contact" style="text-align: right;">Query:*</label>
+          <textarea  cols="20" rows="3" type="text" class="contact-query" id="contactQuery"></textarea>
+          <br>
+          <input type="submit" style="margin-right: 10px;" onclick="submitContactForm()">
+          <input type="reset">
+        </div> 
+      </form>
+      </div>
+    </div>
+    <br>
+    <br>
 </body>
+
 </html>
