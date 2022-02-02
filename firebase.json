@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "FirebaseDeployFeb2022",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
