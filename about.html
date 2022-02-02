@@ -4,6 +4,7 @@
   <title>Simple Calculators</title>
   <link rel="stylesheet" href="maincss.css">
   <meta charset="utf-8">
+  <script src="cftcalc.js" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -86,40 +87,80 @@
                     style="float: right;">
       
       <div class="cft-calculator" id="cft-calc">
-          <h4> Please bear with us while I'm trying to add more topics to website.</h4>
-          <h4> For now this site has capabale of calculating only CFT calculation.</h4>
-          <h4> Please download all the Apps from Google Play store.</h4>
+          <h4> apps-Y.com website is a representation of the below listed 4 apps</h4>
+          <h4> These 4 apps are available for completely free of cost on both Android & iOS devices</h4>
+          <h4> Just clikc the link to download and calulcate accurately.</h4>
 
           <div class="playstore-image">
-            <a href="https://play.google.com/store/apps/details?id=calculator.cubicfeet.truck.truckcubicfeetcalculator"  target="_blank">
-               <img src="Images/playstoreimage.png" class="square-img" alt="Download-link" width="200px" height="80px">
-               <label><span style="font-size: large;"> CFT Calculator</span> <span style="font-size: small;">- Just click to download from Google Play store</span></label>
-             </a>
+            <a href="https://play.google.com/store/apps/details?id=calculator.cubicfeet.truck.truckcubicfeetcalculator"
+              target="_blank">
+              <img src="Images/google-play-badge.png" class="square-img" alt="Download-link" width="40%" height="50%">
+              <label><span style="font-size: large;color: darkblue;"> CFT Calculator</span> </label>
+            </a>
+            </div>
+          <br>
+  
+          <div class="playstore-image">
+            <a href="https://apps.apple.com/us/app/cft-calculator-cubic-foot/id1571236577" 
+              target="_blank">
+              <img src="Images/apple-app-store-badge111.png" class="square-img" alt="Download-link" width="40%" height="auto">
+              <label><span style="font-size: small;color: darkblue;"> CFT Calculator iOS</span></label>
+            </a>
+          </div>
+          <br>
+          <div class="playstore-image">
+            <a href="https://play.google.com/store/apps/details?id=com.yuvaraj.tilecarpetvinylfloorwallareacalculator"
+              target="_blank">
+              <img src="Images/google-play-badge.png" class="square-img" alt="Download-link" width="40%" height="20%">
+              <label><span style="font-size: large;color: darkblue;"> Tiles caluclator</span></label>
+            </a>
            </div>
-           <br>
-           <div class="playstore-image">
-             <a href="https://play.google.com/store/apps/details?id=com.yuvaraj.tilecarpetvinylfloorwallareacalculator"  target="_blank">
-                <img src="Images/playstoreimage.png" class="square-img" alt="Download-link" width="200px" height="80px">
-                <label><span style="font-size: large;"> Tiles Area caluclator</span> <span style="font-size: small;">- Just click to download from Google Play store</span></label>
-              </a>
-            </div>
-           <br>
-            <div class="playstore-image">
-             <a href="https://play.google.com/store/apps/details?id=estimator.sandfilling.tmt.steel.com.tmtsteelsandfillingestimator"  target="_blank">
-                <img src="Images/playstoreimage.png" class="square-img" alt="Download-link" width="200px" height="80px">
-                <label><span style="font-size: large;"> TMT Estimator</span> <span style="font-size: small;">- Just click to download from Google Play store</span></label>
-              </a>
-            </div>
+          <br>
+          
+          <div class="playstore-image">
+            <a href="https://play.google.com/store/apps/details?id=estimator.sandfilling.tmt.steel.com.tmtsteelsandfillingestimator"
+              target="_blank">
+              <img src="Images/google-play-badge.png" class="square-img" alt="Download-link" width="40%" height="auto">
+              <label><span style="font-size: small;color: darkblue;"> TMT Steel Estimator</span> </label>
+            </a>
+            <!-- <a class="fa fa-copy" onclick="copyfunc(3)"></a> -->
+            <!--<a href="https://wa.me/?text=https://play.google.com/store/apps/dev?id=5742750226385239940"
+                    data-action="share/whatsapp/share" target="_blank" class="fa fa-share" ></a>-->
+          </div>
+  
         
       </div>
     </div>
 </div>
-
+<br>
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Please contact us if you are looking for any simple construction based calculators or something 
-    you may need as an app/website just to put in your stuff for reaching consumers'
- </p>
+  <div class="row col-xs-3 col-sm-6 col-md-6 col-lg-8"></div>
+  <p>
+    Please submit contact form with your details and suggestions/Questions. Thanks for visting!.
+  </p>
+  <form onsubmit="return false;" id="contactForm">  
+    <div class contact-fields>     
+      <label class="contactError" id="contactError">*Mandatory Fields </label><br>
+      <label class="contact" style="text-align: right;">Name:*</label>
+      <input type="text" class="contact" id="contactName">
+      <br>
+      <label class="contact" style="text-align: right;">Email:*</label>
+      <input type="email" class="contact" id="contactEmail" >
+      <br>
+      <label class="contact" style="text-align: right;">Mobile:</label>
+      <input type="number" class="contact" id="contactMobile" >
+      <br>
+      <label class="contact" style="text-align: right;">Query:*</label>
+      <textarea  cols="20" rows="3" type="text" class="contact-query" id="contactQuery"></textarea>
+      <br>
+      <input type="submit" style="margin-right: 10px;" onclick="submitContactForm()">
+      <input type="reset">
+    </div> 
+  </form>
+  </div>
 </div>
+<br>
+<br>
 
 </body>
 </html>

@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="maincss.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="cftcalc.js" defer></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -87,18 +88,40 @@
          <!-- Bootstrap Grid Example -->
       <div class="cft-calculator" id="cft-calc">
           <h4> Please send email to below id with any queries or suggestions.</h4>
-          <h4> Email: yuvarajd2588@gmail.com</h4>
+          <h5> Email: raajtradersapp@gmail.com</h5>
           <h4></h4>
       </div>
     </div>
 </div>
-
+<br>
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Please contact us if you are looking for any simple construction based calculators or something 
-    you may need as an app/website just to put in your stuff for reaching consumers'
- </p>
+  <div class="row col-xs-3 col-sm-6 col-md-6 col-lg-8"></div>
+    <p>
+      Please submit contact form with your details and suggestions/Questions. Thanks for visting!.
+    </p>
+    <form onsubmit="return false;" id="contactForm">  
+      <div class contact-fields>     
+        <label class="contactError" id="contactError">*Mandatory Fields </label><br>
+        <label class="contact" style="text-align: right;">Name:*</label>
+        <input type="text" class="contact" id="contactName">
+        <br>
+        <label class="contact" style="text-align: right;">Email:*</label>
+        <input type="email" class="contact" id="contactEmail" >
+        <br>
+        <label class="contact" style="text-align: right;">Mobile:</label>
+        <input type="number" class="contact" id="contactMobile" >
+        <br>
+        <label class="contact" style="text-align: right;">Query:*</label>
+        <textarea  cols="20" rows="3" type="text" class="contact-query" id="contactQuery"></textarea>
+        <br>
+        <input type="submit" style="margin-right: 10px;" onclick="submitContactForm()">
+        <input type="reset">
+      </div> 
+    </form>
+  </div>
 </div>
-
+<br>
+<br>
 
 
 </body>

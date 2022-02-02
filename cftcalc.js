@@ -18,7 +18,7 @@ validateInput(leninp,widinp,htinp,lenunit,widunit,htunit){
         document.getElementById('hterror').style.visibility= 'hidden'
         document.getElementById('displayresult').value = ""
         if (lenunit == 'Foot' && !Number.isInteger(+leninp)){
-            document.getElementById('lenerror').innerHTML = "No Decimals(.) in Length. Select Inches from Dropdown!!!"   
+            document.getElementById('lenerror').innerHTML = "No Decimals(.) in Length for unit-Foot. Select Inches from Dropdown!!!"   
         }else if (leninp <= 0){
             document.getElementById('lenerror').innerHTML = "Enter length!!!"
         }else{
@@ -387,10 +387,12 @@ function jsonCommunication(){
 
     //Below ajax call is syncronus(async= false(!1). So call to backend will happen synchromusly.)
     $.ajax({
-        url: "http://localhost:8080/cftcalc",
+        //url: "http://localhost:8080/cftcalc",
+        url: "https://apps-y-restapi-for-calculation.uc.r.appspot.com/cftcalc",
         type : "POST",
         data : JSON.stringify(calcValues),
         dataType: 'json',
+        headers: {"Authorization": "Basic xxxx"},
         async: !1,  
         crossDomain: true,
         contentType: 'application/json',
@@ -427,13 +429,18 @@ function submitContactForm(){
         "contactMobile"    : ctMobile,
         "contactQuery" : ctQuery
     };
+    //var username = "abc@gmail.com";
+    //var password = "xxxxxx";  //actually whatever we gives it works. All it needed was headers in the ajax. Otherwise spring code throws error saying no header was available.
     //Below ajax call is asyncronus. to make it sync change (async= false(!1). So call to backend will happen synchromusly.)
     $.ajax({
-        url: "http://localhost:8080/contactform",
+        //url: "http://localhost:8080/contactform",
+        url: "https://apps-y-restapi-for-calculation.uc.r.appspot.com/contactform",
         type : "POST",
         data : JSON.stringify(contactValues),    
         async: !1,
         crossDomain: true,
+        //headers: {'Authorization': "Basic " + btoa(username+ ":" + password)},
+        headers: {"Authorization": "Basic xxxx"},
         contentType: 'application/json',
         success : function(contactResponse){    
             //Below line resets the form data to initial value. In our case it is blank
@@ -449,8 +456,12 @@ function submitContactForm(){
         error : function(e) {
             var responseerrors = e.responseJSON;
             console.log("errors in ajax ==> "+e.responseText);
-            alert(responseerrors.error);
-            ctError = responseerrors.error + ". Information not sent. Please try again later";
+            //  alert(responseerrors.error);
+            //ctError = responseerrors.error + ". Information not sent. Please try again later";
+            ctError = e.responseText;
+            if(ctError == null){
+                ctError = "Information not sent. Please try again later";
+            }            
             document.getElementById('contactError').innerHTML = ctError 
             document.getElementById("contactError").style.color ="RED"
         }
