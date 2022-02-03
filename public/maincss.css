@@ -1,0 +1,217 @@
+.contact{
+  font-size: 15px;border-radius: 8px;height: auto;width: auto;
+}
+.contact-query{
+  font-size: 15px;border-radius: 8px;height: auto;width: auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  border: 3px solid green;
+}
+
+.heading-image{
+  float:inherit;
+}
+
+.label-name
+{
+  font-size:15pt;
+  height:30px;
+  width:23%;
+  text-align: center;
+}
+.dummy-label
+{
+  font-size:15pt;
+  height:30px;
+  width:23%;
+  text-align: left;
+}
+
+.input-number
+    {
+     font-size:15pt;
+     height:30px;
+     width:20%;
+     border-radius: 5px;
+    }
+
+.input-inches
+    {
+     font-size:15pt;
+     height:30px;
+     width:20%;
+     border-radius: 5px;
+    }
+
+.input-unit
+    {
+     font-size:15pt;
+     height:30px;
+     width:20%;
+     border-radius: 5px;
+    }
+
+    h4{
+      white-space: wrap;
+      overflow: hidden;
+      display: block;
+      text-overflow: ellipsis;
+      color: red;
+      width: fit-content;
+  }
+/*@media screen and (max-width:640px){
+      input.allbutton{
+           width:10px;
+      }
+ }*/
+
+.fakeimg{
+    height: 100px;
+    background: rgb(133, 9, 9);
+}
+
+.nav-item{
+    color: black;
+}
+
+.fa-copy {
+  background:#E46A44;
+  color: black;
+  padding: 20px;
+  width: 50px;
+  float: right;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-share {
+  background:#E46A44;
+  color: black; 
+  padding: 20px;
+  width: 50px;
+  float: right;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+/*.fa {
+  padding: 20px;
+  font-size: 60px;
+  width: 50px;
+  text-align: right;float: right;
+  text-decoration: none;
+  margin: 5px 2px;float:inline-end;
+}*/
+
+/*.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}*/
+
+.dropdown {
+  position:fixed;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 360px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 16px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropdown {background-color:transparent;}
+
+/**,*::before,*::after{
+    box-sizing: border-box;
+    font-family: 'Gill Sans','Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+}*/
+
+.cft-calculator{
+    background: #CBD3D8;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.allbutton{
+    
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+  
+}
+
+.calcbutton {width: 35%;height: auto;white-space: nowrap;background: #E46A44;color: white;float: right;margin-right: 10px;}
+.clearbutton{width: 25%;height: auto;white-space: nowrap;background: #E46a44;color: black;float: right;}
+
+.allbutton > button:hover{
+    background-color: rgba(46, 10, 179, 0.9);
+}
+
+/* .result{
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 25px;
+    max-height: 50vh;
+    min-height: 5vh;
+    width: auto;
+} */
+/* #mainresult {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+#mainresult div {
+   flex: 1;
+} */
+
+#mainresult{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  
+  }
+
+  .playstore-image {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 3px solid #555;
+  }
+  
+  
+  .square-img{
+    float:inherit;
+  }
+  
+  
+
