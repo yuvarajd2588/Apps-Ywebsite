@@ -5,8 +5,8 @@
   <link rel="stylesheet" href="maincss.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="cftcalc.js" defer></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="tilecalc.js" defer></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -18,12 +18,18 @@
   <h1>Simple Calculators</h1>
   <p>Download from Google Play store or Just calcualte here</p> 
 </div> -->
+<div class="center" style="border: 3px solid #E46A44;padding: 5px;">
+  <img src="Images/headimage2.jpeg" class="heading-image" alt="Home.." width="180px" height="100px">
+  <a style="color:red; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font: size 8px;;">Download the Calculator Apps from Google Play/Apple App store. </a>
+</div>   
 
 <!-- <nav class="navbar navbar-expand-x1 bg-tomato navbar-dark" adjust x1 to sm or something -->
 <nav class="navbar navbar-expand-sm bg-tomato navbar-dark"
       style="font-size: 30px; background: rgb(190, 85, 10);">
   <!--<img src="../Images/homeimage.png" class="rounded-circle" alt="Home.." width="30px" height="30px">-->
-  <img src="Images/homeimageorange.jpeg" class="rounded-circle" alt="Home.." width="40px" height="40px">
+  <a href="index.html">
+    <img src="Images/homeimageorange.jpeg" class="rounded-circle" alt="Home.." width="40px" height="40px">
+  </a>
   <a class="navbar-brand" href="#"></a>
   <a class="navbar-brand" href="index.html" style="color: rgb(0, 0, 0);">
                           <span style="font-size: 12px">H</span>
@@ -53,7 +59,6 @@
     <ul class="navbar-nav ml-right">
       <li><a href="contact.html" style="color: black;"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
     </ul>
-    
   </div>  
 </nav>
 
@@ -64,17 +69,14 @@
         <li class="nav-item">
           <a class="nav-link active" href="#">Download/Calculate here</a>
         </li>
-        <li class="nav-item" style="background-color: lightgray;">
-          <a class="nav-link" id='link1' href="index.html" onclick="cftcalc()"
-                   style="color: black;">CFT Calculator</a>
+        <li class="nav-item">
+          <a class="nav-link" id='link1' href="index.html" onclick="cftcalc()">CFT Calculator</a>
         </li>
-        <li class="nav-item" style="background-color: lightgray;">
-          <a class="nav-link" id='link2' href="tmtcalc.html" onclick="tmtcalc()"
-                   style="color: black;">TMT Rebar Estimator</a>
+        <li class="nav-item">
+          <a class="nav-link" id='link2' href="tmtcalc.html" onclick="tmtcalc()">TMT Rebar Estimator</a>
         </li>
-        <li class="nav-item" style="background-color: lightgray;">
-          <a class="nav-link" id='link3' href="tilecalc.html" onclick="tilecalc()"
-                   style="color: black;" >Tiles Area Calculator</a>
+        <li class="nav-item">
+          <a class="nav-link" id='link3' href="tilecalc.html" onclick="tilecalc()">Tiles Area Calculator</a>
         </li>
         
       </ul>
@@ -82,47 +84,53 @@
     </div>
 
     <div class="col-sm-8">
-        <img src="Images/contacticon.png" class="square-img" alt="Home.." width="100px" height="100px"
-                style="float: right;">
-          
          <!-- Bootstrap Grid Example -->
+        <div class="playstore-image">
+        <a href="https://play.google.com/store/apps/details?id=com.yuvaraj.tilecarpetvinylfloorwallareacalculator"
+          target="_blank">
+          <img src="Images/google-play-badge.png" class="square-img" alt="Download-link" width="40%" height="20%">
+          <label><span style="font-size: large;color: darkblue;"> Tiles caluclator</span></label>
+        </a>
+        </div>
+      <br>
+        
+ 
       <div class="cft-calculator" id="cft-calc">
-          <h4> Please send email to below id with any queries or suggestions.</h4>
-          <h5> Email: raajtradersapp@gmail.com</h5>
-          <h4></h4>
+          <img src="Images/56_work_progress_under_construction_sign_board-256.png"
+                    class="square-img" alt="Home.." width="100px" height="100px">
+          <h3>Tiles Calculator is under Development...</h3>
+          <h2>For now please download Android app from above link for free and calculate in Mobile</h2>
       </div>
     </div>
 </div>
 <br>
 <div class="jumbotron text-center" style="margin-bottom:0">
   <div class="row col-xs-3 col-sm-6 col-md-6 col-lg-8"></div>
-    <p>
-      Please submit contact form with your details and suggestions/Questions. Thanks for visting!.
-    </p>
-    <form onsubmit="return false;" id="contactForm">  
-      <div class contact-fields>     
-        <label class="contactError" id="contactError">*Mandatory Fields </label><br>
-        <label class="contact" style="text-align: right;">Name:*</label>
-        <input type="text" class="contact" id="contactName">
-        <br>
-        <label class="contact" style="text-align: right;">Email:*</label>
-        <input type="email" class="contact" id="contactEmail" >
-        <br>
-        <label class="contact" style="text-align: right;">Mobile:</label>
-        <input type="number" class="contact" id="contactMobile" >
-        <br>
-        <label class="contact" style="text-align: right;">Query:*</label>
-        <textarea  cols="20" rows="3" type="text" class="contact-query" id="contactQuery"></textarea>
-        <br>
-        <input type="submit" style="margin-right: 10px;" onclick="submitContactForm()">
-        <input type="reset">
-      </div> 
-    </form>
+  <p>
+    Please submit contact form with your details and suggestions/Questions. Thanks for visting!.
+  </p>
+  <form onsubmit="return false;" id="contactForm">  
+    <div class contact-fields>     
+      <label class="contactError" id="contactError">*Mandatory Fields </label><br>
+      <label class="contact" style="text-align: right;">Name:*</label>
+      <input type="text" class="contact" id="contactName">
+      <br>
+      <label class="contact" style="text-align: right;">Email:*</label>
+      <input type="email" class="contact" id="contactEmail" >
+      <br>
+      <label class="contact" style="text-align: right;">Mobile:</label>
+      <input type="number" class="contact" id="contactMobile" >
+      <br>
+      <label class="contact" style="text-align: right;">Query:*</label>
+      <textarea  cols="20" rows="3" type="text" class="contact-query" id="contactQuery"></textarea>
+      <br>
+      <input type="submit" style="margin-right: 10px;" onclick="submitContactForm()">
+      <input type="reset">
+    </div> 
+  </form>
   </div>
 </div>
 <br>
-<br>
-
 
 </body>
 </html>
