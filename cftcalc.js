@@ -41,7 +41,7 @@ validateInput(leninp,widinp,htinp,lenunit,widunit,htunit){
         document.getElementById('displayresult').value = ""
         if (widunit == 'Foot' && !Number.isInteger(+widinp)){
             document.getElementById('widerror').innerHTML = "No Decimals(.) in Width. Select Inches from Dropdown!!!"   
-        }else if (htinp <= 0){
+        }else if (widinp <= 0){
             document.getElementById('widerror').innerHTML = "Enter Width!!!"
         }else{
             document.getElementById('widerror').style.visibility = 'hidden'  
