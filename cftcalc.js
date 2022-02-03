@@ -300,6 +300,12 @@ function clearFunction(){
     document.getElementById('unitlen').selectedIndex = '0'
     document.getElementById('unitwid').selectedIndex = '0'
     document.getElementById('unitht').selectedIndex = '0'
+    document.getElementById('leninches').selectedIndex = '0'
+    document.getElementById('widinches').selectedIndex = '0'
+    document.getElementById('htinches').selectedIndex = '0'
+    document.getElementById('leninches').disabled = false
+    document.getElementById('widinches').disabled = false
+    document.getElementById('htinches').disabled = false
     document.getElementById("displayresult").value=''
     clearErrors();
 }
