@@ -394,7 +394,7 @@ function jsonCommunication(){
     //Below ajax call is syncronus(async= false(!1). So call to backend will happen synchromusly.)
     $.ajax({
         //url: "http://localhost:8080/cftcalc",
-        url: "https://apps-y-restapi-for-calculation.uc.r.appspot.com/cftcalc",
+        url: "http://cftcalcspringbootaws-env.eba-xmrd9u9e.us-east-1.elasticbeanstalk.com/cftcalc",
         type : "POST",
         data : JSON.stringify(calcValues),
         dataType: 'json',
